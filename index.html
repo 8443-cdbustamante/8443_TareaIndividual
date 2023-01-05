@@ -87,14 +87,18 @@
                 <div class="content section-title">
                     <h2>XML</h2>
                     <p>
-                        En HTML se pueden incorporar animaciones usando en conjunto CSS y Javascript.
-                        Hay que recordar utilizar un elemento DIV como contenedor, fijando la posición en relativa.La animación irá en un elemento DIV de animación, fijado en posición absoluta.
-                        En Javascript se coloca la programación de la animación, que en su norma general utilizan temporizadores para los cambios graduales de los elementos a animar.
+                       XML es el acrónimo de Extensible Markup Language, es decir, es un lenguaje de marcado que define un conjunto de reglas para la codificación de documentos.
+<br><br>
+El lenguaje de marcado es un conjunto de códigos que se pueden aplicar en el análisis de datos o la lectura de textos creados por computadoras o personas. El lenguaje XML proporciona una plataforma para definir elementos para crear un formato y generar un lenguaje personalizado.
+<br><br>
+Un archivo XML se divide en dos partes: prolog y body. La parte prolog consiste en metadatos administrativos, como declaración XML, instrucción de procesamiento opcional, declaración de tipo de documento y comentarios. La parte del body se compone de dos partes: estructural y de contenido.
                     </p>    
-                    <br>
+                </div>
+                    <h3>Ejemplo</h3>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                      <iframe src="ejem1.html" height="500px" width="100%"></iframe>
                 </div>
 
-                
                 </div>
             </div>
         </section>
@@ -106,98 +110,17 @@
 
                 <div class="section-title" data-aos="fade-in" data-aos-delay="100">
                     <h2>JSON</h2>
-                    <p>Un evento se refiere a la acción programada en Javascript que espera la interacción del usuario para poderse ejecutar. En el ejemplo podemos observar que suscede cuando se hace clic sobre el texto. Además podemos utilizar los eventos en los casos expuestos abajo.</p>
+                    <p>JSON, cuyas siglas significan en verdad JavaScript object notation que, en español se traducen como, notación de objetos de JavaScript, es un formato de intercambio de datos que resulta muy fácil de leer y escribir para los programadores y sencillo de interpretar y crear para las máquinas.
+<br><br>
+JSON es un formato de texto totalmente independiente del lenguaje de programación, pero utiliza términos que son comúnmente conocidos por los programadores</p>
                     <br>
-                    <div style="width: 40%; margin:auto;">
-                        <ul>
-                            <li>Cuando carga una página web</li>
-                            <li>Cuando se carga una imagen</li>
-                            <li>Cuando se pulsa una tecla</li>
-                            <li>Cuando se hace clic en un elemento</li>
-                            <li>Al enviar un formulario</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-6">
-                        <pre style="font-size: 12px; background-color: lightgreen; height: 500px;">
-   &lt;!doctype html&gt;
-    &lt;html lang="en"&gt;
-    
-    &lt;head&gt;
-    &lt;meta charset="utf-8"&gt;
-    &lt;title&gt;auxclick demo&lt;/title&gt;
-    &lt;style&gt;
-    html {
-    height: 100%;
-    overflow: hidden;
-    }
-    
-    body {
-    height: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    }
-    
-    button {
-    border: 0;
-    background-color: white;
-    font-size: 10vw;
-    display: block;
-    width: 100%;
-    height: 100%;
-    }
-    
-    button {
-    letter-spacing: 1rem;
-    }
-    &lt;/style&gt;
-    &lt;/head&gt;
-    
-    &lt;body&gt;
-    
-    &lt;button&gt;Click me!&lt;/button&gt;
-    
-    
-    &lt;script&gt;
-    
-    const button = document.querySelector('button');
-    const html = document.querySelector('html');
-    
-    function random(number) {
-    return Math.floor(Math.random() * number);
-    }
-    
-    button.onclick = () =&gt; {
-    const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
-    button.style.backgroundColor = rndCol;
-    };
-    
-    button.onauxclick = (e) =&gt; {
-    e.preventDefault();
-    const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
-    button.style.color = rndCol;
-    }
-    
-    &lt;/script&gt;
-    
-    
-    &lt;/body&gt;
-    
-    &lt;/html&gt;
-
-                        </pre>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-6">
-                          <iframe src="ejem2.html" height="500px" width="100%"></iframe>
-                    </div>
                     
                 </div>
-            </div>
 
+                <h3>Ejemplo</h3>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                      <iframe src="ejem2.html" height="500px" width="100%"></iframe>
+                </div>
             </div>
         </section>
         <!-- End Services Section -->
@@ -208,84 +131,35 @@
 
                 <div class="section-title" data-aos="fade-in" data-aos-delay="100">
                     <h2>TABLA XML VS JSON</h2>
-                    <p>Se refiera a la utilización del metodo "addEventListener()" para controlar eventos de un elemento específico de forma ordenada y evitando sobreescribir eventos. Estos trabajan con cualquier elemento DOM de la ventana. En el ejemplo siguiente podemos ver como iteractuan 2 event listeners. </p>
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-6">
-                        <pre style="font-size: 12px; background-color: lightyellow; height: 500px;">
-  &lt;!doctype html&gt;
-    &lt;html lang="en-US"&gt;
-    
-    &lt;head&gt;
-    &lt;meta charset="utf-8"&gt;
-    &lt;title&gt;Web Animations API implicit keyframes&lt;/title&gt;
-
-
-
-    &lt;/head&gt;
-    
-    &lt;body&gt;
-
-&lt;button id="example-button"&gt;You have not clicked this button.&lt;/button&gt;
-&lt;button id="reset-button"&gt;Click this button to reset the first button.&lt;/button&gt;
-
-
-
-    
-    &lt;script&gt;
-    const buttonToBeClicked = document.getElementById("example-button");
-
-const resetButton = document.getElementById("reset-button");
-
-// the text that the button is initialized with
-const initialText = buttonToBeClicked.textContent;
-
-// the text that the button contains after being clicked
-const clickedText = "You have clicked this button.";
-
-// we hoist the event listener callback function
-// to prevent having duplicate listeners attached
-function eventListener() {
-  buttonToBeClicked.textContent = clickedText;
-}
-
-function addListener() {
-  buttonToBeClicked.addEventListener(
-    "click",
-    eventListener,
-    {
-      passive: true,
-      once: true
-    }
-  );
-}
-
-// when the reset button is clicked, the example button is reset,
-// and allowed to have its state updated again
-resetButton.addEventListener(
-  "click",
-  () =&gt; {
-    buttonToBeClicked.textContent = initialText;
-    addListener();
-  }
-);
-
-addListener();
-    &lt;/script&gt;
-    &lt;/body&gt;
-    
-    &lt;/html&gt;
-
-
-                        </pre>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-6">
-                          <iframe src="ejem3.html" height="500px" width="100%"></iframe>
-                    </div>
                     
-                </div>
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">SEMEJANZAS</th>
+      <th scope="col">DIFERENCIAS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Se implementan para un fácil entendimiento de los contenidos</td>
+      <td>Json es mas veloz en procesamiento</td>
+    </tr>
+    <tr>
+      <td>Sus datos se estructuran de forma sencilla</td>
+      <td>Xml se demora en procesarlo</td>
+    </tr>
+    <tr>
+      <td>Pueden ser utilizados en varios lenguajes de programación</td>
+      <td>Json es analizado nativamente en Javascript</td>
+    </tr>
+    <tr>
+      <td>Para pocos datos son buenas opciones para ser utilizadas</td>
+      <td>Xml tiene un formato muy estricto</td>
+    </tr>
+  </tbody>
+</table>
 
+                </div>
 
             </div>
         </section>
@@ -296,15 +170,17 @@ addListener();
                 <div class="content section-title">
                     <h2>AJAX</h2>
                     <p>
-                        En HTML se pueden incorporar animaciones usando en conjunto CSS y Javascript.
-                        Hay que recordar utilizar un elemento DIV como contenedor, fijando la posición en relativa.La animación irá en un elemento DIV de animación, fijado en posición absoluta.
-                        En Javascript se coloca la programación de la animación, que en su norma general utilizan temporizadores para los cambios graduales de los elementos a animar.
+                       Ajax (Asynchronous JavaScript and XML) se refiere a un grupo de tecnologías que se utilizan para desarrollar aplicaciones web. Al combinar estas tecnologías, las páginas web parece que son más receptivas puesto que los paquetes pequeños de datos se intercambian con el servidor y las páginas web no se vuelven a cargar cada vez que un usuario realiza un cambio de entrada. 
+                       <br><br>Ajax permite que un usuario de la aplicación web interactúe con una página web sin la interrupción que implica volver a cargar la página web. La interacción del sitio web ocurre rápidamente sólo con partes de la página de recarga y renovación.
                     </p>    
                     <br>
                 </div>
 
-                
-                </div>
+            <h3>Ejemplo</h3>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                          <iframe src="ejem3.html" height="500px" width="100%"></iframe>
+                    </div>
+    
             </div>
         </section>
 

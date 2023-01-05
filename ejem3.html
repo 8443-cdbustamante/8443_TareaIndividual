@@ -7,53 +7,35 @@
 	</head>
 	
 	<body>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
 
-<button id="example-button">You have not clicked this button.</button>
-<button id="reset-button">Click this button to reset the first button.</button>
+&lt;div id="demo"&gt;
+&lt;h1&gt;The XMLHttpRequest Object&lt;/h1&gt;
+&lt;button type="button" onclick="loadDoc()"&gt;Change Content&lt;/button&gt;
+&lt;/div&gt;
 
-
-
-	
-	<script>
-	const buttonToBeClicked = document.getElementById("example-button");
-
-const resetButton = document.getElementById("reset-button");
-
-// the text that the button is initialized with
-const initialText = buttonToBeClicked.textContent;
-
-// the text that the button contains after being clicked
-const clickedText = "You have clicked this button.";
-
-// we hoist the event listener callback function
-// to prevent having duplicate listeners attached
-function eventListener() {
-  buttonToBeClicked.textContent = clickedText;
-}
-
-function addListener() {
-  buttonToBeClicked.addEventListener(
-    "click",
-    eventListener,
-    {
-      passive: true,
-      once: true
+&lt;script&gt;
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
     }
-  );
+  };
+  xhttp.open("GET", "ajax_info.txt", true);
+  xhttp.send();
 }
+&lt;/script&gt;
 
-// when the reset button is clicked, the example button is reset,
-// and allowed to have its state updated again
-resetButton.addEventListener(
-  "click",
-  () => {
-    buttonToBeClicked.textContent = initialText;
-    addListener();
-  }
-);
+&lt;/body&gt;
+&lt;/html&gt;
 
-addListener();
-	</script>
+
+</pre>
 	</body>
 	
 	</html>
