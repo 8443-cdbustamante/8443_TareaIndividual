@@ -53,9 +53,10 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                    <li><a class="nav-link scrollto" href="#intro">Diferencias</a></li>
-                    <li><a class="nav-link scrollto" href="#metodo">Semejanzas</a></li>
-                    <li><a class="nav-link scrollto" href="#component">Ajax</a></li>
+                    <li><a class="nav-link scrollto" href="#intro">XML</a></li>
+                    <li><a class="nav-link scrollto" href="#metodo">JSON</a></li>
+                    <li><a class="nav-link scrollto" href="#component">Tabla</a></li>
+                    <li><a class="nav-link scrollto" href="#ajax">AJAX</a></li>
                    
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
@@ -71,6 +72,8 @@
         <div class="hero-container" data-aos="fade-up">
             <h1>XML - JSON - AJAX</h1>
             <h2>Una breve introducción</h2>
+            <br>
+            <h2><i>Elaborador por Cristian Bustamante</i></h2>
             <a href="#intro" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
         </div>
     </section>
@@ -82,7 +85,7 @@
         <section id="intro" class="about" data-aos="fade-up">
             <div class="container">
                 <div class="content section-title">
-                    <h2>Semejanzas XML - JSON</h2>
+                    <h2>XML</h2>
                     <p>
                         En HTML se pueden incorporar animaciones usando en conjunto CSS y Javascript.
                         Hay que recordar utilizar un elemento DIV como contenedor, fijando la posición en relativa.La animación irá en un elemento DIV de animación, fijado en posición absoluta.
@@ -91,70 +94,7 @@
                     <br>
                 </div>
 
-                <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-6">
-                        <pre style="font-size: 12px; background-color: lightcyan; height: 500px;">
-    &lt;!doctype html&gt;
-    &lt;html lang="en-US"&gt;
-    
-    &lt;head&gt;
-    &lt;meta charset="utf-8"&gt;
-    &lt;title&gt;Web Animations API implicit keyframes&lt;/title&gt;
-    &lt;style&gt;
-    html {
-    height: 100%;
-    }
-    
-    body {
-    margin: 0;
-    height: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-    
-    div {
-    width: 150px;
-    height: 100px;
-    background-color: red;
-    border: 10px solid black;
-    border-radius: 10px;
-    }
-    &lt;/style&gt;
-    &lt;/head&gt;
-    
-    &lt;body&gt;
-    &lt;div&gt;
-    
-    &lt;/div&gt;
-    
-    &lt;script&gt;
-    const divElem = document.querySelector('div');
-    
-    let rotate360 = [
-    { transform: 'rotate(360deg)' }
-    ];
-    
-    let slowInfinite = {
-    duration: 5000,
-    iterations: Infinity
-    }
-    
-    divElem.animate( rotate360, slowInfinite );
-    
-    &lt;/script&gt;
-    &lt;/body&gt;
-    
-    &lt;/html&gt;
-
-
-                        </pre>
-                    </div>
-
-                    <div class="col-sm-12 col-md-6 col-lg-6">
-                          <iframe src="ejem1.html" height="500px" width="100%"></iframe>
-                    </div>
-                    
+                
                 </div>
             </div>
         </section>
@@ -165,7 +105,7 @@
             <div class="container">
 
                 <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-                    <h2>Eventos DOM</h2>
+                    <h2>JSON</h2>
                     <p>Un evento se refiere a la acción programada en Javascript que espera la interacción del usuario para poderse ejecutar. En el ejemplo podemos observar que suscede cuando se hace clic sobre el texto. Además podemos utilizar los eventos en los casos expuestos abajo.</p>
                     <br>
                     <div style="width: 40%; margin:auto;">
@@ -267,7 +207,7 @@
             <div class="container">
 
                 <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-                    <h2>Event Listener</h2>
+                    <h2>TABLA XML VS JSON</h2>
                     <p>Se refiera a la utilización del metodo "addEventListener()" para controlar eventos de un elemento específico de forma ordenada y evitando sobreescribir eventos. Estos trabajan con cualquier elemento DOM de la ventana. En el ejemplo siguiente podemos ver como iteractuan 2 event listeners. </p>
                 </div>
 
@@ -351,6 +291,22 @@ addListener();
         </section>
         <!-- End Testimonials Section -->
 
+        <section id="ajax" class="ajax" data-aos="fade-up">
+            <div class="container">
+                <div class="content section-title">
+                    <h2>AJAX</h2>
+                    <p>
+                        En HTML se pueden incorporar animaciones usando en conjunto CSS y Javascript.
+                        Hay que recordar utilizar un elemento DIV como contenedor, fijando la posición en relativa.La animación irá en un elemento DIV de animación, fijado en posición absoluta.
+                        En Javascript se coloca la programación de la animación, que en su norma general utilizan temporizadores para los cambios graduales de los elementos a animar.
+                    </p>    
+                    <br>
+                </div>
+
+                
+                </div>
+            </div>
+        </section>
 
     </main>
     <!-- End #main -->
@@ -366,7 +322,7 @@ addListener();
                             <h3>Cristian Bustamante</h3>
                             <p class="pb-3"><em>Aplicación de Tecnologías Web</em></p>
                             <p>
-                                03/01/2023 <br>
+                                05/01/2023 <br>
                             </p>
                             <div class="social-links mt-3">
                                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
